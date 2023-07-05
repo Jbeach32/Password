@@ -35,34 +35,34 @@ if (!uppercase && !lowercase && !numeric && !special) {
     return "";
 }
 
-var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lowerChars = "abcdefghijklmnopqrstuvwxyz";
-var numericChars = "01234567890";
-var specialChars = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+var upperC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerC = "abcdefghijklmnopqrstuvwxyz";
+var numericC = "01234567890";
+var specialC = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
-var charPool = "";
+var all = "";
 
 if (uppercase) {
-    charPool += upperChars;
+    all += upperC;
 }
 
 if (lowercase) {
-    charPool += lowerChars;
+    all += lowerC;
 }
 
 if (numeric) {
-    charPool += numericChars;
+    all += numericC;
 }
 
 if (special) {
-    charPool += specialChars;
+    all += specialC;
 }
 
 var password = "";
 
 for (var i = 0; i < length; i++) {
-    var randomIndex = Math.floor(Math.random() * charPool.length);
-    password += charPool[randomIndex];
+    var randomIndex = Math.floor(Math.random() * all.length);
+    password += all[randomIndex];
 }
 
 return password;
