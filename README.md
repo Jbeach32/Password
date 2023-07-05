@@ -6,6 +6,7 @@ This webpage is designed to help create a password. By selecting the red 'Genera
 
 ## Installation
 
+https://jbeach32.github.io/Password/
 
 ## Usage
 
